@@ -1,0 +1,79 @@
+.nav{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,0.4);
+    padding: 0 50px ;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+    0 2px 2px rgba(0,0,0,0.12),
+    0 4px 4px rgba(0,0,0,0.12),
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+.nav .brand{
+    margin-top: 2%;
+    margin-right: 10%;
+    height: 100%;
+    width: 10%;
+    text-align: center;
+}
+.icon{
+    margin-left: 10%;
+    margin-top: 2%;
+    display: flex;  
+}
+.icon .mat-icon{
+    margin-right: 20px;
+}
+
+.nav ul{
+    float: left;
+    display: flex;
+    margin:0;
+    padding: 0;
+}
+.nav ul li{
+    list-style: none;
+    width: 200px;
+    text-align: center;
+}
+.nav ul li a{
+    position: relative;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s
+}
+.nav ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform-origin: right;
+    z-index: -1;
+    transform: scaleX(0);
+    transition:  transform 0.5s;
+}
+.nav ul li a:hover:before{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.nav ul li a:hover{
+    color: #262626;
+}
+.icon :hover{
+    cursor: pointer;
+    color: rgb(129, 211, 129);
+}

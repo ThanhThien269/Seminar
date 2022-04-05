@@ -1,0 +1,23 @@
+<div class="nav">
+    <div class="brand">
+        <h2>Clothes Shop</h2>
+    </div>
+    <ul>
+        <li><a href="">Trang Chủ</a></li>
+        <li><a href=""> Áo thun đơn giản</a></li>
+        <li><a href="">Áo sơ mi</a></li>
+    </ul>
+    <div class="icon">
+        <mat-icon>perm_identity</mat-icon>
+        <mat-icon>search</mat-icon>
+        <mat-icon> local_mall</mat-icon>
+    </div>
+    <button style="margin-top: 1%;margin-left: 100px;" mat-icon-button [matMenuTriggerFor]="menu" >
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-button routerLink="/add" >Thêm</button>
+        <button mat-button routerLink="/delete" >Xoá</button>
+        <button mat-button routerLink="/update" >Sửa</button>
+      </mat-menu>
+</div>
