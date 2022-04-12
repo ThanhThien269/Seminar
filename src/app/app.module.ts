@@ -7,12 +7,12 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
-import { ItemComponent } from './components/item/item.component';
+import { SharedModule } from './shared/shared/shared.module';
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
-    ItemComponent
+    NavBarComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -21,6 +21,7 @@ import { ItemComponent } from './components/item/item.component';
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
